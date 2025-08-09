@@ -6,7 +6,7 @@ The process begins with an empty SQLite database, which will serve as the storag
 
 Once the data is extracted, the script checks the database to determine if the event is already stored. If the event is new (not previously recorded), it is inserted into the database using **sqlite3**. This prevents duplicate entries and ensures the user is only notified about fresh events.
 
-For notification, the project uses Python’s smtplib to send an email alert directly to the user’s inbox. This email contains the name, venue, and date of the new upcoming event, ensuring the user stays informed without manually checking websites.
+For notification, the project uses Python’s **smtplib** to send an email alert directly to the user’s inbox. This email contains the name, venue, and date of the new upcoming event, ensuring the user stays informed without manually checking websites.
 
 The system can be useful and is user-friendly that the users don't have to visit the websites and check for events, instead they get notified by an email with the event details.
 
